@@ -38,3 +38,12 @@ func TestThird(t *testing.T) {
 		log.Fatalf(Fail(want, ret))
 	}
 }
+func TestFourth(t *testing.T) {
+	nums := []int{1, 3, 5, 6}
+	target := 0
+	want := 0
+	ret := searchInsert(nums, target)
+	if ret != want {
+		log.Fatalf(Fail(want, ret))
+	}
+}
