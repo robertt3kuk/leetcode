@@ -4,7 +4,7 @@ func searchInsert(nums []int, target int) int {
 	high := len(nums) - 1
 	low := 0
 	mid := high + low/2
-	if nums[low] > target {
+	if nums[low] >= target {
 		return low
 	}
 	for {

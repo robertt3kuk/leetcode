@@ -47,3 +47,12 @@ func TestFourth(t *testing.T) {
 		log.Fatalf(Fail(want, ret))
 	}
 }
+func TestFifth(t *testing.T) {
+	nums := []int{1}
+	target := 1
+	want := 0
+	ret := searchInsert(nums, target)
+	if ret != want {
+		log.Fatalf(Fail(want, ret))
+	}
+}
